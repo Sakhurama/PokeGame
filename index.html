@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Pokemones</title>
 </head>
 <body>
-    <h1>
-        <img src="./img/pokemonLogo.png" alt="logo Pokemon">
-    </h1>
+    <div class="divElegirPokemon">
+        <h1>
+            <img src="./img/pokemonLogo.png" alt="logo Pokemon">
+        </h1>
 
-    <section id="seleccionar-pokemon">
-        <h2>Elige tu Pokemon:</h2>
+        <section id="seleccionar-pokemon">
+            <h2>Elige tu Pokemon:</h2>
 
-        <div class="listaPokemones">
-            <label for="pikachu">Pikachu</label>
-            <input type="radio" name="pokemones" id="pikachu">
+            <div class="listaPokemones">
 
-            <label for="bulbasaur">Bulbasaur</label>
-            <input type="radio" name="pokemones" id="bulbasaur">
-            
-            <label for="charmander">Charmander</label>
-            <input type="radio" name="pokemones" id="charmander">
-        </div>
-        
-        <div class="btnElegirPokemon">
-            <button id="boton-pokemon">Elegir</button>
-        </div>
+                <div class="tarjetas">
+                    <input type="radio" name="pokemones" id="pikachu">
+                    <label for="pikachu" class="pikachuGif">
+                        <img src="./img/pikachu.gif" alt="pikachu">
+                        <p>Pikachu</p>
+                    </label>
+                </div>
+
+                <div class="tarjetas">
+                    <input type="radio" name="pokemones" id="bulbasaur">
+                    <label for="bulbasaur" class="bulbasaurGif">
+                        <img src="./img/bulbasaur.gif" alt="bulbasaur">
+                        <p>Bulbasaur</p>
+                    </label>
+                </div>
+
+                <div class="tarjetas">
+                    <input type="radio" name="pokemones" id="charmander">
+                    <label for="charmander" class="charmanderGif">
+                        <img src="img/charmander.gif" alt="charmander">
+                        <p>Charmander</p>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="btnElegirPokemon">
+                <button id="boton-pokemon">Elegir</button>
+            </div>
+    </div>
     </section>
 
     <section id="seleccionar-ataque">
