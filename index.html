@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemones</title>
+</head>
+<body>
+    <h1>
+        <img src="./img/pokemonLogo.png" alt="logo Pokemon">
+    </h1>
+
+    <section id="seleccionar-pokemon">
+        <h2>Elige tu Pokemon:</h2>
+
+        <div class="listaPokemones">
+            <label for="pikachu">Pikachu</label>
+            <input type="radio" name="pokemones" id="pikachu">
+
+            <label for="bulbasaur">Bulbasaur</label>
+            <input type="radio" name="pokemones" id="bulbasaur">
+            
+            <label for="charmander">Charmander</label>
+            <input type="radio" name="pokemones" id="charmander">
+        </div>
+        
+        <div class="btnElegirPokemon">
+            <button id="boton-pokemon">Elegir</button>
+        </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h2>Elige un ataque</h2>
+        
+        <p>Tu Pokemon: <b><span id="pokemon-usuario"></span></b> tiene <b><span id="span-vidas-jugador">3</span> vidas</b></p>        
+        <p>El Pokemon del enemigo: <b><span id="pokemon-enemigo"></span></b> tiene <b><span id="span-vidas-enemigo">3</span> vidas</b></p>        
+        
+            <button id="btn-fuego">Fuego 🔥</button>
+            <button id="btn-agua">Agua 💧</button>
+            <button id="btn-tierra">Tierra 🏔️</button>
+
+    </section> <br>
+
+    <section id="mensajes">
+    </section> <br>
+
+    <section id="mensajeGanador">
+    </section> <br>
+
+    <section>
+        <button id="reset">Volver a jugar</button>
+    </section>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
