@@ -2,15 +2,41 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
 }
 
-h1 {
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url(./img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divElegirPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    width: 850px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 15px;
 }
 
 h1 img {
-    width: 300px;
+    width: 350px;
+    padding: 10px;
 }
 
 #seleccionar-pokemon {
@@ -19,4 +45,66 @@ h1 img {
     align-items: center;
     margin-top: 10px;
     gap: 1rem;
+}
+
+.listaPokemones {
+    display: flex;
+    align-items: center;
+    gap: 4rem
+}
+
+.listaPokemones input {
+    appearance: none 
+}
+
+.listaPokemones input:checked + label{
+    border: 4px solid darkorange;
+    border-radius: 10px;
+
+}
+
+.pikachuGif img {
+    height: 200px;
+}
+
+.bulbasaurGif img {
+    height: 200px;
+}
+
+.charmanderGif img {
+    height: 190px;
+}
+
+.tarjetas {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.tarjetas:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.tarjetas p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.btnElegirPokemon button{
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btnElegirPokemon button:hover {
+    background-color: darkorange;
+    transform: scale(0.9);
 }
