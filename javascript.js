@@ -5,7 +5,9 @@ function ElegirAleatorio () {
 
 function ElegirPokemon(){
     let seccionAtaques = document.getElementById('seleccionar-ataque')   
-seccionAtaques.style.display = 'block'
+    seccionAtaques.style.display = 'block'
+
+    let seccionElegirPokemon = document.getElementById('seleccionar-pokemon');
 
     let bulbasaur = document.getElementById('bulbasaur').checked
     let charmander = document.getElementById('charmander').checked
@@ -18,12 +20,15 @@ seccionAtaques.style.display = 'block'
     if (pikachu.checked) {
         alert("Has elegido a Pikachu")
         miPokemon.innerHTML = 'Pikachu'
+        seccionElegirPokemon.style.display = 'none'
     } else if (bulbasaur == true) {
         alert("Has elegido a Bulbasaur")
         miPokemon.innerHTML = 'Bulbasaur'
+        seccionElegirPokemon.style.display = 'none'
     } else if (charmander == true){
         alert("Has elegido a Charmander")
         miPokemon.innerHTML = 'Charmander'
+        seccionElegirPokemon.style.display = 'none'
     } else {
         alert("Elige un Pokemon")
         ReiniciarJuego()
@@ -132,6 +137,7 @@ function MensajeGanador(){
     if (vidasJugador == 0){
         let mensaje = document.createTextNode("FIN DEL JUEGO - 💔 Lo sentimos, esta vez PERDISTE 💔")
         nuevoParrafo.appendChild(mensaje);
+        nuevoParrafo.classList.add('mensaje', 'mensaje-perdedor');
 
         botonesAtaque.forEach(function(button) {
             button.disabled = true;
@@ -142,6 +148,7 @@ function MensajeGanador(){
     } else if (vidasEnemigo == 0) {
         let mensaje = document.createTextNode("FIN DEL JUEGO - 🎉 Felicitaciones has Ganado 🎉")
         nuevoParrafo.appendChild(mensaje);
+        nuevoParrafo.classList.add('mensaje', 'mensaje-ganador');
 
         botonesAtaque.forEach(function(button) {
             button.disabled = true;

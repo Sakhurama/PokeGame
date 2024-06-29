@@ -11,69 +11,73 @@
     <title>Pokemones</title>
 </head>
 <body>
-    <div class="divElegirPokemon">
-        <h1>
-            <img src="./img/pokemonLogo.png" alt="logo Pokemon">
-        </h1>
+    <div class="tarjeta-contenedora">
+        <div class="divElegirPokemon">
+            <h1>
+                <img src="./img/pokemonLogo.png" alt="logo Pokemon">
+            </h1>
 
-        <section id="seleccionar-pokemon">
-            <h2>Elige tu Pokemon:</h2>
+            <section id="seleccionar-pokemon">
+                <h2>Elige tu Pokemon:</h2>
 
-            <div class="listaPokemones">
+                <div class="listaPokemones">
 
-                <div class="tarjetas">
-                    <input type="radio" name="pokemones" id="pikachu">
-                    <label for="pikachu" class="pikachuGif">
-                        <img src="./img/pikachu.gif" alt="pikachu">
-                        <p>Pikachu</p>
-                    </label>
+                    <div class="tarjetas">
+                        <input type="radio" name="pokemones" id="pikachu">
+                        <label for="pikachu" class="pikachuGif">
+                            <img src="./img/pikachu.gif" alt="pikachu">
+                            <p>Pikachu</p>
+                        </label>
+                    </div>
+
+                    <div class="tarjetas">
+                        <input type="radio" name="pokemones" id="bulbasaur">
+                        <label for="bulbasaur" class="bulbasaurGif">
+                            <img src="./img/bulbasaur.gif" alt="bulbasaur">
+                            <p>Bulbasaur</p>
+                        </label>
+                    </div>
+
+                    <div class="tarjetas">
+                        <input type="radio" name="pokemones" id="charmander">
+                        <label for="charmander" class="charmanderGif">
+                            <img src="img/charmander.gif" alt="charmander">
+                            <p>Charmander</p>
+                        </label>
+                    </div>
+
                 </div>
 
-                <div class="tarjetas">
-                    <input type="radio" name="pokemones" id="bulbasaur">
-                    <label for="bulbasaur" class="bulbasaurGif">
-                        <img src="./img/bulbasaur.gif" alt="bulbasaur">
-                        <p>Bulbasaur</p>
-                    </label>
+                <div class="btns">
+                    <button id="boton-pokemon">Elegir</button>
                 </div>
+        </div>
+        </section>
 
-                <div class="tarjetas">
-                    <input type="radio" name="pokemones" id="charmander">
-                    <label for="charmander" class="charmanderGif">
-                        <img src="img/charmander.gif" alt="charmander">
-                        <p>Charmander</p>
-                    </label>
-                </div>
-
+        <section id="seleccionar-ataque">
+            <h2>Elige un ataque</h2>
+            
+            <div class="info-vidas">
+                <p>Tu Pokemon: <b><span id="pokemon-usuario"></span></b> tiene <b><span id="span-vidas-jugador">3</span> vidas</b></p>
+                <p>El Pokemon del enemigo: <b><span id="pokemon-enemigo"></span></b> tiene <b><span id="span-vidas-enemigo">3</span> vidas</b></p>
             </div>
-
-            <div class="btnElegirPokemon">
-                <button id="boton-pokemon">Elegir</button>
+            <div class="btns">
+                <button id="btn-fuego">Fuego 🔥</button>
+                <button id="btn-agua">Agua 💧</button>
+                <button id="btn-tierra">Tierra 🏔️</button>
             </div>
+        </section> <br>
+
+        <section id="mensajes">
+        </section> <br>
+
+        <section id="mensajeGanador">
+        </section> <br>
+
+        <section class="btns">
+            <button id="reset">Volver a jugar</button>
+        </section>
     </div>
-    </section>
-
-    <section id="seleccionar-ataque">
-        <h2>Elige un ataque</h2>
-        
-        <p>Tu Pokemon: <b><span id="pokemon-usuario"></span></b> tiene <b><span id="span-vidas-jugador">3</span> vidas</b></p>        
-        <p>El Pokemon del enemigo: <b><span id="pokemon-enemigo"></span></b> tiene <b><span id="span-vidas-enemigo">3</span> vidas</b></p>        
-        
-            <button id="btn-fuego">Fuego 🔥</button>
-            <button id="btn-agua">Agua 💧</button>
-            <button id="btn-tierra">Tierra 🏔️</button>
-
-    </section> <br>
-
-    <section id="mensajes">
-    </section> <br>
-
-    <section id="mensajeGanador">
-    </section> <br>
-
-    <section>
-        <button id="reset">Volver a jugar</button>
-    </section>
 
     <script src="javascript.js"></script>
 </body>

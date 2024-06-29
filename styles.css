@@ -14,29 +14,36 @@ body, html {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(./img/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: auto;
 }
 
-.divElegirPokemon {
+.tarjeta-contenedora {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     padding: 10px;
     width: 850px;
-    height: 600px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.808);
     border-radius: 15px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
 h1 img {
-    width: 350px;
-    padding: 10px;
+    width: 280px;
+    margin-top: 15px;
 }
 
 #seleccionar-pokemon {
@@ -60,19 +67,22 @@ h1 img {
 .listaPokemones input:checked + label{
     border: 4px solid darkorange;
     border-radius: 10px;
-
+    padding: 5px;
 }
 
 .pikachuGif img {
-    height: 200px;
+    height: 190px;
+    cursor: pointer;
 }
 
 .bulbasaurGif img {
-    height: 200px;
+    height: 190px;
+    cursor: pointer;
 }
 
 .charmanderGif img {
     height: 190px;
+    cursor: pointer;
 }
 
 .tarjetas {
@@ -81,12 +91,14 @@ h1 img {
     padding: 10px;
     margin-bottom: 20px;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .tarjetas:hover {
     background-color: darkorange;
     transform: scale(1.05);
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
 }
 
 .tarjetas p {
@@ -94,7 +106,13 @@ h1 img {
     text-align: center;
 }
 
-.btnElegirPokemon button{
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btns button{
     padding: 10px;
     color: black;
     border: none;
@@ -102,9 +120,56 @@ h1 img {
     font-size: 22px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-bottom: 10px;
 }
 
-.btnElegirPokemon button:hover {
+.btns button:hover {
     background-color: darkorange;
     transform: scale(0.9);
+}
+
+.btns button:disabled {
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+#seleccionar-ataque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seleccionar-ataque h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkorange;
+}
+
+.info-vidas {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#mensajes {
+    background-color: rgb(28, 48, 48);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.mensaje {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.mensaje-perdedor {
+    background-color: DarkRed;
+}
+.mensaje-ganador {
+    background-color: DarkGreen;
 }
