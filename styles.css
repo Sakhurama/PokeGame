@@ -152,6 +152,15 @@ h1 img {
     font-size: 1.5rem;
 }
 
+#span-vidas-jugador {
+    color: greenyellow;
+}
+
+#span-vidas-enemigo {
+    color: greenyellow;
+
+}
+
 #mensajes {
     background-color: rgb(28, 48, 48);
     padding: 10px 20px;
@@ -173,3 +182,40 @@ h1 img {
 .mensaje-ganador {
     background-color: DarkGreen;
 }
+
+@media (max-width: 550px) {
+
+    .tarjeta-contenedora {
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .pikachuGif img {
+        height: 80px;
+    }
+    
+    .bulbasaurGif img {
+        height: 80px;
+    }
+    
+    .charmanderGif img {
+        height: 80px;
+    }
+
+    .tarjetas p {
+        font-size: 1.3rem;
+    }
+
+    .listaPokemones {
+        gap: 1rem
+    }
+
+    .info-vidas {
+        font-size: 1.5rem;
+        margin: 20px 15px;
+        margin-bottom: 40px;
+    }
+  }
