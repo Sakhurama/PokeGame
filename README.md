@@ -12,7 +12,7 @@ Está construido con HTMl, CSS y Javascript vanilla.
   
 <br>
 
-Este fue mi primer proyecto de código y me permitió adentrarme en la programación, ahora me doy cuenta de lo valioso que es tener bases solidas en HTML y CSS pues solamente con esto ya podemos hacer enormes cambios y mejoras.
+Este fue mi primer proyecto de código y fue un abrebocas al fascinante mundo de la programación, ahora me doy cuenta lo valioso que es tener bases solidas en HTML y CSS pues solamente con esto ya podemos hacer enormes cambios y mejoras.
 
 <br>
 
