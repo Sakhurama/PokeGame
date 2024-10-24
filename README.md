@@ -9,7 +9,12 @@ Está construido con HTMl, CSS y Javascript vanilla.
 - Modificar el DOM
 - Condicionales If Else
 - Funciones y Variables
+  
+<br>
+
 Este fue mi primer proyecto de código y me permitió adentrarme en la programación, ahora me doy cuenta de lo valioso que es tener bases solidas en HTML y CSS pues solamente con esto ya podemos hacer enormes cambios y mejoras.
+
+<br>
 
 ### ¿Qué sigue?
 Para este proyecto tan bonito y que me trae buen sabor al ser mi primer proyecto tengo unas features pensadas a futuro, a medida que las realice las iré borrando:
@@ -17,6 +22,8 @@ Para este proyecto tan bonito y que me trae buen sabor al ser mi primer proyecto
 - Agregar nuevos pokemones.
 - Mostrar el pokemon enemigo.
 - Ajustar errores de vista mobile.
+
+<br>
 
 ### Un vistazo
 > [!TIP]
