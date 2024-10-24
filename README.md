@@ -1,4 +1,4 @@
-## Pokemones Game
+## Pokemon Game
 [![Banner pokemon](img/screenshots/banner.png)](https://mokepon-app.netlify.app/)
 Este proyecto fue realizado con el [Curso de Programación Básica](https://platzi.com/cursos/programacion-basica/) de Platzi, toda la interfaz visual fue iniciativa propia y diseño propio.
 Está construido con HTMl, CSS y Javascript vanilla.
