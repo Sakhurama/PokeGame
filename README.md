@@ -1,5 +1,5 @@
-## Pokemones Game
-[![Banner pokemon](img/screenshots/banner.png)](https://sakhurama.github.io/Pokemones/)
+## Pokemon Game
+[![Banner pokemon](img/screenshots/banner.png)](https://mokepon-app.netlify.app/)
 Este proyecto fue realizado con el [Curso de Programación Básica](https://platzi.com/cursos/programacion-basica/) de Platzi, toda la interfaz visual fue iniciativa propia y diseño propio.
 Está construido con HTMl, CSS y Javascript vanilla.
 <br>
@@ -27,7 +27,7 @@ Para este proyecto tan bonito y que me trae buen sabor al ser mi primer proyecto
 
 ### Un vistazo
 > [!TIP]
-> Te invito a probarlo y jugar tu mismo [haciendo clic aquí.](https://sakhurama.github.io/Pokemones/).
+> Te invito a probarlo y jugar tu mismo [haciendo clic aquí.](https://mokepon-app.netlify.app/).
 [Imagen](img/screenshots/1.png)
 [Imagen](img/screenshots/2.png)
 [Imagen](img/screenshots/3.png)
